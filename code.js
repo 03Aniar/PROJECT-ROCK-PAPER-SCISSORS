@@ -35,3 +35,12 @@ function single_round(playerSelection, computerSelection) {
             return "OOPs, something went wrong!!!"
     }
 }
+
+function game() {
+
+    for (let i = 0; i < 5; i++) {
+        let computerSelection = computerPlay();
+        let playerSelection = prompt("What is your move?", "rock or paper or scissors");
+        console.log(single_round(playerSelection, computerSelection));
+    }
+}
